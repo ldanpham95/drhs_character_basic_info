@@ -1,0 +1,1 @@
+# drhs_character_basic_info
