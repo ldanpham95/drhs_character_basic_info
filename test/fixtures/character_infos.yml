@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  shsl: MyString
+  height: 1
+  weight: 1
+  chest: 1
+  bloodtype: MyString
+  birthday: MyString
+  likes: MyText
+  dislike: MyText
+  eyecolor: MyString
+  haircolor: MyString
+  associates: MyText
+  nicknames: MyText
+
+two:
+  name: MyString
+  shsl: MyString
+  height: 1
+  weight: 1
+  chest: 1
+  bloodtype: MyString
+  birthday: MyString
+  likes: MyText
+  dislike: MyText
+  eyecolor: MyString
+  haircolor: MyString
+  associates: MyText
+  nicknames: MyText

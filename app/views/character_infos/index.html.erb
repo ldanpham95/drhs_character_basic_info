@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Character Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Shsl</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Bloodtype</th>
+      <th>Birthday</th>
+      <th>Likes</th>
+      <th>Dislikes</th>
+      <th>Eyecolor</th>
+      <th>Haircolor</th>
+      <th>Associates</th>
+      <th>Nicknames</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_infos.each do |character_info| %>
+      <tr>
+        <td><%= character_info.name %></td>
+        <td><%= character_info.shsl %></td>
+        <td><%= character_info.height %></td>
+        <td><%= character_info.weight %></td>
+        <td><%= character_info.chest %></td>
+        <td><%= character_info.bloodtype %></td>
+        <td><%= character_info.birthday %></td>
+        <td><%= character_info.likes %></td>
+        <td><%= character_info.dislikes %></td>
+        <td><%= character_info.eyecolor %></td>
+        <td><%= character_info.haircolor %></td>
+        <td><%= character_info.associates %></td>
+        <td><%= character_info.nicknames %></td>
+        <td><%= link_to 'Show', character_info %></td>
+        <td><%= link_to 'Edit', edit_character_info_path(character_info) %></td>
+        <td><%= link_to 'Destroy', character_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character Info', new_character_info_path %>
